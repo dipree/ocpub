@@ -1,4 +1,6 @@
 FROM ruby:latest
+EXPOSE $PORT
+COPY Gemfile.lock .
 RUN bundle install
-COPY ocpub.rb .
+COPY ..
 ENTRYPOINT ["ruby", "ocpub.rb"]
