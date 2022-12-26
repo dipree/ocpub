@@ -3,4 +3,4 @@ EXPOSE $PORT
 COPY Gemfile* ./
 RUN bundle install
 COPY . .
-ENTRYPOINT ["bundle", "exec", "unicorn", "-l", "8080"]
+ENTRYPOINT ["bundle", "exec", "unicorn", "-l", "$PORT"]
