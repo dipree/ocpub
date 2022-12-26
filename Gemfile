@@ -1,6 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '~> 3.1.3'
+ruby "~> 3.1.3"
 
-gem 'sys'
-gem 'bigdecimal'
+gem "sys"
+gem "bigdecimal"
+gem "unicorn"
+gem "sinatra"
