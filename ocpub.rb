@@ -18,8 +18,8 @@ $durations = Array.new
 $execution_date = Time.now.utc
 
 Thread.new do
-    0.step(to: $repetition) do |round|
-        puts "#{round+1}. Round"
+    1.step(to: $repetition) do |round|
+        puts "#{round}. Round"
 
         start_time = Time.now
         BigMath.PI($precision).to_s
