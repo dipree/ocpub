@@ -3,7 +3,7 @@ require "sinatra"
 
 # Config
 $precision = 100000
-$repetition = 10
+$repetition = 1000
 $durations = Array.new
 $execution_date = Time.now.utc
 
